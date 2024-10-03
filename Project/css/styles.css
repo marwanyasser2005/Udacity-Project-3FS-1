@@ -1,0 +1,145 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+h1, h2, h3 {
+    color: #222;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+a:hover {
+    color: #2980b9; /* Darker shade on hover */
+}
+
+/* Layout */
+header {
+    background-color: #3498db;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px; /* Spacing between menu items */
+}
+
+nav ul li a {
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+}
+
+.logo {
+    width: 50px;
+}
+
+/* Blog Posts */
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+    width: 48%;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions for effects */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.button:hover {
+    background-color: #2980b9; /* Darker shade on hover */
+}
+.logo {
+    width: 80px; /* Set the desired width for the logo */
+    border-radius: 50%; /* Makes the logo circular */
+    object-fit: cover; /* Ensures the image covers the entire area */
+}
+
+.profile-pic {
+    width: 100px; /* Set the desired width for the profile picture */
+    border-radius: 50%; /* Makes the profile picture circular */
+    object-fit: cover; /* Ensures the image covers the entire area */
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px; /* Spacing above footer */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .blog-posts {
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+        margin-bottom: 20px; /* Space between cards */
+    }
+}

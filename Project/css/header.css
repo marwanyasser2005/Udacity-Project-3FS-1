@@ -1,0 +1,121 @@
+/* header.css */
+header {
+    background: linear-gradient(135deg, #007BFF, #00C6FF);
+    color: white;
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1.logo {
+    font-size: 2rem; /* Logo size */
+    font-weight: bold;
+    margin-bottom: 20px; /* Space below logo */
+    color: #3498db; /* Color to match social links */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+.navbar ul li {
+    margin-left: 2rem; /* Margin for each link */
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 0;
+    font-size: 1.2rem; /* Font size to match about section */
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    position: relative;
+}
+
+.navbar ul li a:hover {
+    color: #FFD700; /* Highlight color on hover */
+    background-color: rgba(255, 215, 0, 0.2); /* Light background on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.navbar ul li a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #FFD700; /* Underline color */
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navbar ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Profile Image */
+.circular-photo {
+    max-width: 100%; /* Responsive size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the circular area */
+    width: 150px; /* Set a specific width */
+    height: 150px; /* Set a specific height */
+}
+
+/* Footer Section */
+footer {
+    background-color: #2c3e50; /* Dark footer background */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0; /* Remove margin from footer paragraph */
+}
+
+/* Social Links */
+footer .socials a {
+    color: #3498db; /* Link color */
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2rem; /* Font size */
+}
+
+footer .socials a:hover {
+    color: #2980b9; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Stack links vertically */
+        margin-top: 1rem; /* Space between logo and links */
+        justify-items: center;
+    }
+
+    .navbar ul li {
+        margin-left: 0; /* Remove left margin for stacked layout */
+        margin-bottom: 1rem; /* Space between links */
+    }
+
+    .navbar h1.logo {
+        font-size: 2rem; /* Adjust logo size on smaller screens */
+    }
+}

@@ -1,0 +1,100 @@
+/* Contact Form Styles */
+.contact {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center; /* Center the heading */
+}
+
+.contact p {
+    margin-bottom: 20px;
+    color: #555;
+    text-align: center; /* Center the paragraph */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #3498db; /* Light blue border */
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transition effects */
+    font-family: 'Roboto', sans-serif; /* Font family */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #2980b9; /* Darker blue on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(41, 128, 185, 0.5); /* Add shadow on focus */
+}
+
+/* Add more distinctive styles */
+input::placeholder,
+textarea::placeholder {
+    color: #aaa; /* Placeholder text color */
+    font-style: italic; /* Italicize placeholder text */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing only */
+}
+
+/* Button Styles */
+.submit-button {
+    background-color: #3498db; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding for the button */
+    font-size: 1rem; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition effects */
+    width: 100%; /* Full-width button */
+}
+
+.submit-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight grow effect */
+}
+
+.submit-button:active {
+    transform: scale(0.95); /* Slight shrink effect on click */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.socials a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.socials a:hover {
+    text-decoration: underline;
+}
